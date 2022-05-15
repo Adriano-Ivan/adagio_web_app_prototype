@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/adagio_web_app_prototype/static/css/main.a445f2ca.css",
+    "main.js": "/adagio_web_app_prototype/static/js/main.05e18699.js",
+    "static/media/user.svg": "/adagio_web_app_prototype/static/media/user.312180b65744f1cfe0685bb4b5fc0a14.svg",
+    "index.html": "/adagio_web_app_prototype/index.html",
+    "main.a445f2ca.css.map": "/adagio_web_app_prototype/static/css/main.a445f2ca.css.map",
+    "main.05e18699.js.map": "/adagio_web_app_prototype/static/js/main.05e18699.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a445f2ca.css",
+    "static/js/main.05e18699.js"
+  ]
+}
