@@ -1,0 +1,25 @@
+.header-navigation {
+    display: flex;
+    justify-content:space-between;
+    color: #fefefe;
+    padding: 0 1rem;
+    background-color:  #463a8b;
+    align-items:center;
+}
+
+.lista-navegacao {
+    display:flex;
+    list-style:none;
+    margin-bottom:0;
+}
+
+.item-navegacao a{
+    color: #fefefe;
+    text-decoration:none;
+    margin-bottom: 0;
+    text-transform:uppercase;
+}
+.adagio_logo {
+    height: 80px;
+    box-shadow: none;
+}
