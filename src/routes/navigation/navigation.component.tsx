@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { UserContext } from "../../contexts/user.context";
 import AdagioLogo from "../../assets/adagio_logo.png";
-import './navigation.styles.css';
+import styles from './navigation.module.scss';
 
 const Navigation = () => {
     const [loginOrRegisterPageAux,setLoginOrRegisterPageAux] = useState<string>();
@@ -23,10 +23,13 @@ const Navigation = () => {
 
     const verifyCurrentUserState = () =>{
         console.log(window.location.pathname);
+
         return (
-            <nav className={"navegacao-container"}>
-                <ul className={"lista-navegacao"}>
-                    <li onClick={toggleLoginOrRegisterPageAux} className={"item-navegacao"}>
+            <nav className={`${styles["navegacao-container"]}`}>
+                <ul className={`${styles['lista-navegacao']}`}>
+
+                    <li onClick={toggleLoginOrRegisterPageAux} 
+                    className={`${styles['item-navegacao']}`}>
                         <Link  to={`${loginOrRegisterPageAux}`} >
                             {
                                 loginOrRegisterPageAux === "/" ?
@@ -34,6 +37,7 @@ const Navigation = () => {
                             }
                         </Link>
                     </li>
+
                 </ul>
             </nav>
         );
@@ -42,9 +46,9 @@ const Navigation = () => {
     return (
         <Fragment>
 
-            <header className={"header-navigation"}>
+            <header className={`${styles['header-navigation']}`}>
                 <Link to="/" >
-                    <img className={"adagio_logo"} src={AdagioLogo}/>
+                    <img className={`${styles.adagio_logo}`} src={AdagioLogo}/>
                 </Link>
                 {verifyCurrentUserState()}
             </header>

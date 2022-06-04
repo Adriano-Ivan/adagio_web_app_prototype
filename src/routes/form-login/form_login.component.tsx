@@ -7,7 +7,7 @@ import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import InputGroup from "react-bootstrap/InputGroup";
-import "./form_login.styles.css";
+import styles from "./form_login.module.scss";
 import  loginIcon from "../../assets/user.svg";
 import {BsFillPersonFill} from "react-icons/bs";
 import {BsLockFill} from "react-icons/bs";
@@ -25,10 +25,10 @@ const FormLogin = () =>{
         )
     }
     return (
-        <section className={"container-login-area"}>
+        <section className={`${styles['container-login-area']}`}>
 
-        <section className={"login-area"}>
-        <img src={loginIcon} className={"login-icon"} alt="login icon"/>
+        <section className={`${styles['login-area']}`}>
+        <img src={loginIcon} className={`${styles['login-icon']}`} alt="login icon"/>
         <Container className={"mt-5 center"}>
             <Row>
                 <Col lg={12} md={12} sm={12}>
@@ -51,8 +51,8 @@ const FormLogin = () =>{
                             
                         </Form.Group>
 
-                        <div className={"confirm-login"}>
-                            <div className={"confirm-remember"}>
+                        <div className={`${styles['confirm-login']}`}>
+                            <div className={`${styles['confirm-remember']}`}>
                                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                                     <Form.Check type="checkbox" label="Lembrar-me" />
                                 </Form.Group>

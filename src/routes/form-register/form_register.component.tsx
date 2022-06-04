@@ -4,17 +4,18 @@ import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import InputGroup from "react-bootstrap/InputGroup";
-import "./form_register.styles.css";
+import styles from "./form_register.module.scss";
 
 const FormRegister = () => {
     return (
         <section>
 
-<Container className={"mt-5 center"}>
+        <Container className={"mt-5 center"}>
             <Row>
                 <Col lg={12} md={12} sm={12}>
                     <Form>
-                        <Form.Group  className={"mb-3 name_register_form"} controlId="formBasicName">
+                        <Form.Group  className={`mb-3 ${styles.name_register_form}`} 
+                        controlId="formBasicName">
                             Nome:
                             <InputGroup className={"mt-2"}>
                                 <Form.Control  
@@ -22,8 +23,8 @@ const FormRegister = () => {
                             </InputGroup>
                         </Form.Group>
                         
-                        <div className={"set_register_form"}>
-                            <Form.Group  className={"mb-3 member_register_form"} 
+                        <div className={`${styles.set_register_form}`}>
+                            <Form.Group  className={`mb-3 ${styles.member_register_form}`} 
                             controlId="formBasicUsername">
                                 Nome de usuário:
                                 <InputGroup className={"mt-2"}>
@@ -33,7 +34,8 @@ const FormRegister = () => {
                             </Form.Group>
                        
 
-                            <Form.Group  className={"mb-3 member_register_form"} controlId="formBasicCpf">
+                            <Form.Group  className={`mb-3 ${styles.member_register_form}`}
+                             controlId="formBasicCpf">
                                 CPF:
                                 <InputGroup className={"mt-2"}>
                                     <Form.Control  
@@ -42,16 +44,18 @@ const FormRegister = () => {
                             </Form.Group>
                         </div>
 
-                        <div className={"set_register_form"}>
-                            <Form.Group  className={"mb-3 member_register_form"} controlId="formBasicEmail">
+                        <div className={`${styles.set_register_form}`}>
+                            <Form.Group  className={`mb-3 ${styles.member_register_form}`} 
+                            controlId="formBasicEmail">
                                 Email:
                                 <InputGroup className={"mt-2"}>
                                     <Form.Control  
-                                    type="email" placeholder="Um email que seja seu e que você possa acessar" />
+                                    type="email"
+                                     placeholder="Um email que seja seu e que você possa acessar" />
                                 </InputGroup>
                             </Form.Group>
                             
-                            <Form.Group  className={"mb-3 member_register_form"} 
+                            <Form.Group  className={`mb-3 ${styles.member_register_form}`} 
                                         controlId="formBasicTelefone">
                                 Telefone:
                                 <InputGroup className={"mt-2"}>
@@ -62,8 +66,8 @@ const FormRegister = () => {
 
                         </div>
 
-                        <div className={"set_register_form"}>
-                            <Form.Group className={"mb-3 member_register_form"} 
+                        <div className={`${styles.set_register_form}`}>
+                            <Form.Group className={`mb-3 ${styles.member_register_form}`} 
                             controlId="formBasicPassword">
                                 Senha:
                                 <InputGroup className={"mt-2"}>
@@ -73,7 +77,7 @@ const FormRegister = () => {
                             </Form.Group>
 
 
-                            <Form.Group className={"mb-3 member_register_form"} 
+                            <Form.Group className={`mb-3 ${styles.member_register_form}`} 
                                         controlId="formBasicConfirmPassword">
                                 Confirmação de senha:
                                 <InputGroup className={"mt-2"}>
@@ -83,9 +87,9 @@ const FormRegister = () => {
                             </Form.Group>
                         </div>
                        
-                        <div className={"set_register_form"}>
-                            <div className={"buttons_area_register"}>
-                                <Button style={{backgroundColor:" #991f00",
+                        <div className={`${styles.set_register_form}`}>
+                            <div className={`${styles.buttons_area_register}`}>
+                                <Button style={{backgroundColor:"#991f00",
                                 borderColor:"#991f00"}} variant="primary" type="button">
                                     Limpar campos
                                 </Button>

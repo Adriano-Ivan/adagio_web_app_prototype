@@ -20,13 +20,13 @@
     "typescript": "^4.6.4",
     "web-vitals": "^2.1.4"
   },
-  "homepage":"https://adriano-ivan.github.io/adagio_web_app_prototype/",
+  "homepage": "https://adriano-ivan.github.io/adagio_web_app_prototype/",
   "scripts": {
     "start": "PORT=8091 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "npm run build && gh-pages -d build"
   },
   "eslintConfig": {
@@ -48,6 +48,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "sass": "^1.52.1",
+    "typescript-plugin-css-modules": "^3.4.0"
   }
 }
